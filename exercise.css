@@ -1,0 +1,165 @@
+.ex-1-square:hover{
+    background-color: red;
+}
+
+.ex-2-square:hover{
+    width: 100%;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+.ex-4-square:hover{
+    opacity: 0;
+}
+
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+
+}
+.ex-5-square:active{
+    width: 30px;
+    height: 30px;
+}
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
+
+.ex-7-img:hover{
+    filter: blur(10px) grayscale(1);
+}
+.ex-7-img{
+    transition:2s;
+}
+
+.ex-8-img:hover{
+    filter: sepia(.5) saturate(.5);
+    border-radius: 50%;
+}
+.ex-8-img{
+    transition: border-radius 2s;
+}
+
+.ex-9-img:hover{
+    filter: sepia(.5) saturate(.5);
+    border-radius: 50%;
+    transform: scale(1.5);
+}
+.ex-9-img{
+    transition: border-radius 2s,transform 2s;
+}
+.ex-10-icon {
+    animation: ruota 3s linear infinite;
+}
+@keyframes ruota {
+    0% {
+        transform: rotate(-360deg);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: ruota-ex11 3s linear infinite;
+}
+@keyframes ruota-ex11 {
+   0%{
+    transform: rotate(0);
+   }
+   75%{
+    transform: rotate(270deg);
+   }
+   100%{
+    transform: rotate(0);
+   }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: animate-ex12 3s linear infinite;
+}
+@keyframes animate-ex12{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 0;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: animate-ex12-b 3s linear infinite;
+}
+@keyframes animate-ex12-b{
+    0%{
+        left:calc(100% - 60px);
+    }
+    50%{
+        left:0 ;
+    }
+    100%{
+        left:calc(100% - 60px);
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: animate-ex13 12s linear infinite;
+}
+@keyframes animate-ex13{
+    0%{
+        top: -17px;
+        left: 10%;
+    }
+    25%{
+        top: -17px;
+        left:calc(100% - 3px)  ;
+    }
+    50%{
+        top:100% ;
+        left:calc(100% - 3px) 
+    }
+    75%{
+        left: -57px;
+        top: 100%;
+    }
+    80%{
+        left:-57px;
+        top: -17px;
+    }
+    100%{
+        left:10%;
+        top:-17px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: animate-ex13-b 12s linear infinite;
+}
+@keyframes animate-ex13-b{
+    0%{
+        bottom: -17px;
+        right: 10%;
+    }
+    25%{
+        bottom: -17px;
+        right:calc(100% - 3px)  ;
+    }
+    50%{
+        bottom:100% ;
+        right:calc(100% - 3px) 
+    }
+    75%{
+        right: -57px;
+        bottom: 100%;
+    }
+    80%{
+        right:-57px;
+        bottom: -17px;
+    }
+    100%{
+        right:10%;
+        bottom:-17px;
+    }
+}
